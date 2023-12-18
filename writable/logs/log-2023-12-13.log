@@ -1,0 +1,41 @@
+ERROR - 2023-12-13 08:08:41 --> mysqli_sql_exception: Table 'ci_bookstore.books' doesn't exist in C:\Users\RAFI ALIEFIAN\OneDrive\Documents\SEM 5\PBKK\libraread\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAFI ALIEFIAN\OneDrive\Documents\SEM 5\PBKK\libraread\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\RAFI ALIEFIAN\OneDrive\Documents\SEM 5\PBKK\libraread\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\RAFI ALIEFIAN\OneDrive\Documents\SEM 5\PBKK\libraread\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\RAFI ALIEFIAN\OneDrive\Documents\SEM 5\PBKK\libraread\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\RAFI ALIEFIAN\OneDrive\Documents\SEM 5\PBKK\libraread\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\RAFI ALIEFIAN\OneDrive\Documents\SEM 5\PBKK\libraread\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\RAFI ALIEFIAN\OneDrive\Documents\SEM 5\PBKK\libraread\app\Controllers\BooksController.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\RAFI ALIEFIAN\OneDrive\Documents\SEM 5\PBKK\libraread\system\CodeIgniter.php(942): App\Controllers\BooksController->index()
+#8 C:\Users\RAFI ALIEFIAN\OneDrive\Documents\SEM 5\PBKK\libraread\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+#9 C:\Users\RAFI ALIEFIAN\OneDrive\Documents\SEM 5\PBKK\libraread\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\RAFI ALIEFIAN\OneDrive\Documents\SEM 5\PBKK\libraread\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\RAFI ALIEFIAN\OneDrive\Documents\SEM 5\PBKK\libraread\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAFI A...')
+#12 {main}
+CRITICAL - 2023-12-13 08:08:41 --> Table 'ci_bookstore.books' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\BooksController.php(18): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BooksController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BooksController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAFI ALIEFIAN\\OneDrive\\Documents\\SEM 5\\PBKK\\libraread\\public\\index.php')
+CRITICAL - 2023-12-13 08:10:38 --> Class "Faker\Provider\Uuid" not found
+in APPPATH\Controllers\UsersController.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsersController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAFI ALIEFIAN\\OneDrive\\Documents\\SEM 5\\PBKK\\libraread\\public\\index.php')
+CRITICAL - 2023-12-13 08:10:49 --> Class "Faker\Provider\Uuid" not found
+in APPPATH\Controllers\UsersController.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\UsersController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAFI ALIEFIAN\\OneDrive\\Documents\\SEM 5\\PBKK\\libraread\\public\\index.php')
